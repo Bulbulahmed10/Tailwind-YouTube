@@ -22,23 +22,25 @@
   </head>
   <body>
     <!--! header  -->
-    <header class="flex h-14 fixed -mt-14 w-full">
-      <div
-        class="flex w-64 dark:bg-[#0f0f0f] bg-white text-white items-center px-5"
-      >
+    <header
+      class="flex h-14 bg-white dark:bg-[#0f0f0f] fixed -mt-14 w-full z-50"
+    >
+      <div class="flex w-64 text-white items-center px-5">
         <span
           ><i
-            class="fa-solid fa-bars text-xl cursor-pointer text-gray-400 p-3 pt-1.5 pb-1.5 rounded-full hover:bg-gray-800 duration-200"
+            class="fa-solid fa-bars text-xl cursor-pointer text-gray-800 dark:text-gray-400 hover:bg-gray-300 p-3 pt-1.5 pb-1.5 rounded-full hover:dark:bg-gray-800 duration-200"
           ></i
         ></span>
-        <div class="flex">
-          <img
-            class="h-5 w-20 ml-6 cursor-pointer"
-            src="./images/youtubelogo.svg"
-            alt=""
-          />
-          <span class="-mt-2.5"
-            ><sup class="text-gray-400 text-[10px]">BD</sup></span
+        <div class="flex items-center cursor-pointer -mt-1">
+          <img class="h-8 ml-6 mt-1" src="./images/youtube-fav.svg" alt="" />
+          <p class="mt-1 ml-0.5">
+            <span
+              class="text-[22px] font-medium text-black font-['Oswald'] dark:text-gray-100"
+              >YouTube</span
+            >
+          </p>
+          <span class="text-gray-400 font-medium text-[10px] ml-1 -mt-4"
+            >BD</span
           >
         </div>
       </div>
@@ -49,17 +51,32 @@
         <input
           placeholder="Search"
           type="text"
-          class="w-3/5 h-9 rounded-full dark:bg-[#0f0f0f] pl-6 border-gray-600 border placeholder:text-gray-400 focus:outline-none focus:border-sky-600"
+          class="border-gray-400 text-black placeholder:text-gray-900 dark:border-gray-600 dark:text-gray-200 dark:bg-[#0f0f0f] border dark:placeholder:text-gray-400 focus:outline-none w-3/5 h-9 rounded-full pl-6 focus:border-sky-600"
         />
-        <span class="-ml-14 bg-gray-600 p-1.5 px-5 rounded-r-lg cursor-pointer"
+        <span
+          class="-ml-14 text-gray-800 bg-gray-200 hover:bg-gray-300 border-gray-400 border dark:border-gray-600 dark:bg-gray-600 hover:dark:bg-gray-600 dark:text-gray-200 rounded-r-full py-[5px] px-[20px] cursor-pointer"
           ><i class="fa-solid fa-magnifying-glass"></i
         ></span>
-      </div>
-      <div
-        class="flex items-center w-64 justify-end text-gray-300 dark:bg-[#0f0f0f] px-8"
-      >
         <span
-          class="cursor-pointer hover:bg-gray-800 duration-200 p-3 rounded-full"
+          class="text-gray-800 hover:bg-gray-300 bg-gray-200 dark:bg-slate-900 dark:text-gray-200 hover:dark:bg-gray-700 p-2 rounded-full cursor-pointer ml-2 duration-150"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-[22px] h-[22px]"
+          >
+            <path
+              d="M8.25 4.5a3.75 3.75 0 117.5 0v8.25a3.75 3.75 0 11-7.5 0V4.5z"
+            />
+            <path
+              d="M6 10.5a.75.75 0 01.75.75v1.5a5.25 5.25 0 1010.5 0v-1.5a.75.75 0 011.5 0v1.5a6.751 6.751 0 01-6 6.709v2.291h3a.75.75 0 010 1.5h-7.5a.75.75 0 010-1.5h3v-2.291a6.751 6.751 0 01-6-6.709v-1.5A.75.75 0 016 10.5z"
+            />
+          </svg>
+        </span>
+      </div>
+      <div class="flex items-center w-64 justify-end dark:bg-[#0f0f0f] px-8">
+        <span
+          class="cursor-pointer text-gray-800 hover:bg-gray-300 dark:text-gray-200 hover:dark:bg-gray-800 duration-200 p-3 rounded-full"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +93,7 @@
           </svg>
         </span>
         <span
-          class="cursor-pointer hover:bg-gray-800 duration-200 p-3 rounded-full"
+          class="cursor-pointer text-gray-800 dark:text-gray-200 hover:bg-gray-300 hover:dark:bg-gray-800 duration-200 p-3 rounded-full"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +111,7 @@
           </svg>
         </span>
         <sup
-          class="text-white text-[10px] -ml-6 -mt-1 bg-red-600 text-center p-2 px-[2px] h-1 rounded-full"
+          class="text-white text-[10px] -ml-6 -mt-1 bg-red-600 text-center p-2 px-[2px] h-1 rounded-full cursor-pointer"
           >10+</sup
         >
         <img
@@ -108,11 +125,11 @@
     <div class="flex mt-14">
       <!-- side menu -->
       <div
-        class="flex flex-col fixed h-full overflow-scroll scrollbar-thumb-gray-500 w-64 bg-white dark:bg-[#0f0f0f] pb-[60px] pl-5 scrollbar-thin scrollbar-track-[#0f0f0f] scrollbar-thumb-rounded-full"
+        class="flex flex-col fixed h-full overflow-scroll scrollbar-thumb-gray-500 dark:scrollbar-thumb-gray-600 w-64 bg-white dark:bg-[#0f0f0f] pb-[60px] pl-5 scrollbar-thin dark:scrollbar-track-[#0f0f0f] scrollbar-thumb-rounded-full"
       >
         <ul class="mt-2">
           <li
-            class="flex items-center text-white hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
+            class="text-black bg-gray-100 font-semibold hover:bg-gray-200 flex items-center dark:text-white dark:bg-[#222222] dark:hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -131,7 +148,7 @@
             <span class="ml-6 text-[16px] pr-18">Home</span>
           </li>
           <li
-            class="flex items-center text-white hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
+            class="flex items-center dark:text-white hover:bg-gray-100 hover:dark:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -150,7 +167,7 @@
             <span class="ml-6 text-[16px] pr-18">Shorts</span>
           </li>
           <li
-            class="flex items-center text-white hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
+            class="flex text-black items-center dark:text-white hover:bg-gray-100 dark:hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -171,7 +188,7 @@
           </li>
           <hr class="mt-4 mb-4 w-48 dark:bg-slate-900" />
           <li
-            class="flex items-center text-white hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
+            class="flex text-black items-center dark:text-white hover:bg-gray-100 dark:hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -191,7 +208,7 @@
             <span class="ml-6 text-[16px] pr-18">Library</span>
           </li>
           <li
-            class="flex items-center text-white hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
+            class="flex text-black items-center dark:text-white hover:bg-gray-100 dark:hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -212,7 +229,7 @@
           </li>
 
           <li
-            class="flex items-center text-white hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
+            class="flex text-black items-center dark:text-white hover:bg-gray-100 dark:hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -232,7 +249,7 @@
             <span class="ml-6 text-[16px] pr-18">Your videos</span>
           </li>
           <li
-            class="flex items-center text-white hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
+            class="flex text-black items-center dark:text-white hover:bg-gray-100 dark:hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -252,7 +269,7 @@
             <span class="ml-6 text-[16px] pr-18">Watch later</span>
           </li>
           <li
-            class="flex items-center text-white hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
+            class="flex text-black items-center dark:text-white hover:bg-gray-100 dark:hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -272,7 +289,7 @@
             <span class="ml-6 text-[16px] pr-18">Downloads</span>
           </li>
           <li
-            class="flex items-center text-white hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
+            class="flex text-black items-center dark:text-white hover:bg-gray-100 dark:hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -292,7 +309,7 @@
             <span class="ml-6 text-[16px] pr-18">Your clips</span>
           </li>
           <li
-            class="flex items-center text-white hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
+            class="flex text-black items-center dark:text-white hover:bg-gray-100 dark:hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -312,16 +329,16 @@
             <span class="ml-6 text-[16px] pr-18">Show more</span>
           </li>
           <hr class="mt-4 mb-4 w-48 dark:bg-slate-900" />
-          <h4 class="text-white">Subscriptions</h4>
+          <h4 class="dark:text-white">Subscriptions</h4>
           <li
-            class="flex items-center hover:bg-[#222222] cursor-pointer duration-100 w-48 p-2 rounded-lg"
+            class="flex items-center hover:bg-gray-100 dark:hover:bg-[#222222] cursor-pointer duration-100 w-48 p-2 rounded-lg"
           >
             <img
               class="h-6 w-6 rounded-full object-cover"
               src="./images/side-menu-assets/somoytv.jpg"
               alt="somoytv-logo"
             />
-            <h5 class="text-white ml-3 text-[14px]">SOMOY TV</h5>
+            <h5 class="dark:text-white ml-3 text-[14px]">SOMOY TV</h5>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -338,74 +355,74 @@
             </svg>
           </li>
           <li
-            class="flex items-center hover:bg-[#222222] cursor-pointer duration-100 w-48 p-2 rounded-lg"
+            class="flex items-center hover:bg-gray-100 dark:hover:bg-[#222222] cursor-pointer duration-100 w-48 p-2 rounded-lg"
           >
             <img
               class="h-6 w-6 rounded-full object-cover"
               src="./images/side-menu-assets/Baseera.jpg"
               alt=""
             />
-            <h5 class="text-white ml-3 text-[14px]">Baseera</h5>
+            <h5 class="dark:text-white ml-3 text-[14px]">Baseera</h5>
           </li>
           <li
-            class="flex items-center hover:bg-[#222222] cursor-pointer duration-100 w-48 p-2 rounded-lg"
+            class="flex items-center hover:bg-gray-100 dark:hover:bg-[#222222] cursor-pointer duration-100 w-48 p-2 rounded-lg"
           >
             <img
               class="h-6 w-6 rounded-full object-cover"
               src="./images/side-menu-assets/programming-hero.jpg"
               alt=""
             />
-            <h5 class="text-white ml-3 text-[14px] truncate ...">
+            <h5 class="dark:text-white ml-3 text-[14px] truncate ...">
               Programming Hero Community
             </h5>
             <!--TODO: use hover title   -->
           </li>
           <li
-            class="flex items-center hover:bg-[#222222] cursor-pointer duration-100 w-48 p-2 rounded-lg"
+            class="flex items-center hover:bg-gray-100 dark:hover:bg-[#222222] cursor-pointer duration-100 w-48 p-2 rounded-lg"
           >
             <img
               class="h-6 w-6 rounded-full object-cover"
               src="./images/side-menu-assets/khalid-farhan.jpg"
               alt=""
             />
-            <h5 class="text-white ml-3 text-[14px]">Khalid Farhan</h5>
+            <h5 class="dark:text-white ml-3 text-[14px]">Khalid Farhan</h5>
           </li>
           <li
-            class="flex items-center hover:bg-[#222222] cursor-pointer duration-100 w-48 p-2 rounded-lg"
+            class="flex items-center hover:bg-gray-100 dark:hover:bg-[#222222] cursor-pointer duration-100 w-48 p-2 rounded-lg"
           >
             <img
               class="h-6 w-6 rounded-full object-cover"
               src="./images/side-menu-assets/amin.jpg"
               alt=""
             />
-            <h5 class="text-white ml-3 text-[14px]">Yahia Amin</h5>
+            <h5 class="dark:text-white ml-3 text-[14px]">Yahia Amin</h5>
           </li>
           <li
-            class="flex items-center hover:bg-[#222222] cursor-pointer duration-100 w-48 p-2 rounded-lg"
+            class="flex items-center hover:bg-gray-100 dark:hover:bg-[#222222] cursor-pointer duration-100 w-48 p-2 rounded-lg"
           >
             <img
               class="h-6 w-6 rounded-full object-cover"
               src="./images/side-menu-assets/lws.jpg"
               alt=""
             />
-            <h5 class="text-white ml-3 text-[14px] truncate ...">
+            <h5 class="dark:text-white ml-3 text-[14px] truncate ...">
               Learn with Sumit-LWS
             </h5>
           </li>
           <li
-            class="flex items-center hover:bg-[#222222] cursor-pointer duration-100 w-48 p-2 rounded-lg"
+            class="flex items-center hover:bg-gray-100 dark:hover:bg-[#222222] cursor-pointer duration-100 w-48 p-2 rounded-lg"
           >
             <img
               class="h-6 w-6 rounded-full object-cover"
               src="./images/side-menu-assets/OTG.jpg"
               alt=""
             />
-            <h5 class="text-white ml-3 text-[14px] truncate">
+            <h5 class="dark:text-white ml-3 text-[14px] truncate">
               Nadir On The Go - Bangla
             </h5>
           </li>
           <li
-            class="flex items-center text-white hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
+            class="flex items-center dark:text-white hover:bg-gray-100 dark:hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -425,9 +442,9 @@
             <span class="ml-6 text-[14px] pr-18">Show 197 more</span>
           </li>
           <hr class="mt-4 mb-4 w-48 dark:bg-slate-900" />
-          <h5 class="text-white">Explore</h5>
+          <h5 class="dark:text-white">Explore</h5>
           <li
-            class="flex items-center text-white hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
+            class="flex items-center dark:text-white hover:bg-gray-100 dark:hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -452,7 +469,7 @@
             <span class="ml-6 text-[16px] pr-18">Trending</span>
           </li>
           <li
-            class="flex items-center text-white hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
+            class="flex items-center dark:text-white hover:bg-gray-100 dark:hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -472,7 +489,7 @@
             <span class="ml-6 text-[16px] pr-18">Music</span>
           </li>
           <li
-            class="flex items-center text-white hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
+            class="flex items-center dark:text-white hover:bg-gray-100 dark:hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -492,7 +509,7 @@
             <span class="ml-6 text-[16px] pr-18">Gaming</span>
           </li>
           <li
-            class="flex items-center text-white hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
+            class="flex items-center dark:text-white hover:bg-gray-100 dark:hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -512,9 +529,9 @@
             <span class="ml-6 text-[16px] pr-18">Sports</span>
           </li>
           <hr class="mt-4 mb-4 w-48 dark:bg-slate-900" />
-          <h5 class="text-white">More from YouTube</h5>
+          <h5 class="dark:text-white">More from YouTube</h5>
           <li
-            class="flex items-center text-white hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
+            class="flex items-center dark:text-white hover:bg-gray-100 dark:hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
           >
             <img
               class="w-6 h-6"
@@ -525,7 +542,7 @@
             <span class="ml-6 text-[16px] pr-18">Creator Studio</span>
           </li>
           <li
-            class="flex items-center text-white hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
+            class="flex items-center dark:text-white hover:bg-gray-100 dark:hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
           >
             <img
               class="w-6 h-6"
@@ -535,7 +552,7 @@
             <span class="ml-6 text-[16px] pr-18">YouTube Music</span>
           </li>
           <li
-            class="flex items-center text-white hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
+            class="flex items-center dark:text-white hover:bg-gray-100 dark:hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
           >
             <img
               class="w-6 h-6"
@@ -546,7 +563,7 @@
             <span class="ml-6 text-[16px] pr-18">Youtube Kids</span>
           </li>
           <li
-            class="flex items-center text-white hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
+            class="flex items-center dark:text-white hover:bg-gray-100 dark:hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
           >
             <img
               class="w-6 h-6"
@@ -558,7 +575,7 @@
           </li>
           <hr class="mt-4 mb-4 w-48 dark:bg-slate-900" />
           <li
-            class="flex items-center text-white hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
+            class="flex items-center dark:text-white hover:bg-gray-100 dark:hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -583,7 +600,7 @@
             <span class="ml-6 text-[16px] pr-18">Settings</span>
           </li>
           <li
-            class="flex items-center text-white hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
+            class="flex items-center dark:text-white hover:bg-gray-100 dark:hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -603,7 +620,7 @@
             <span class="ml-6 text-[16px] pr-18">Report history</span>
           </li>
           <li
-            class="flex items-center text-white hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
+            class="flex items-center dark:text-white hover:bg-gray-100 dark:hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -623,7 +640,7 @@
             <span class="ml-6 text-[16px] pr-18">Help</span>
           </li>
           <li
-            class="flex items-center text-white hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
+            class="flex items-center dark:text-white hover:bg-gray-100 dark:hover:bg-[#222222] focus:bg-[#222222] py-2 pl-2 rounded-lg cursor-pointer duration-100 w-48"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -645,34 +662,66 @@
           <hr class="mt-4 mb-4 w-48 dark:bg-slate-900" />
         </ul>
         <div class="w-48 items-start text-sm">
-          <a href="#" class="text-gray-300 ml-1 hover:text-gray-400">About </a>
-          <a href="#" class="text-gray-300 ml-1 hover:text-gray-400">Press</a>
-          <a href="#" class="text-gray-300 ml-1 hover:text-gray-400"
+          <a
+            href="#"
+            class="text-gray-500 font-medium hover:text-gray-800 dark:text-gray-300 ml-1 dark:hover:text-gray-400"
+            >About
+          </a>
+          <a
+            href="#"
+            class="text-gray-500 font-medium hover:text-gray-800 dark:text-gray-300 ml-1 dark:hover:text-gray-400"
+            >Press</a
+          >
+          <a
+            href="#"
+            class="text-gray-500 font-medium hover:text-gray-800 dark:text-gray-300 ml-1 dark:hover:text-gray-400"
             >Copyright</a
           >
-          <a href="#" class="text-gray-300 ml-1 hover:text-gray-400"
+          <a
+            href="#"
+            class="text-gray-500 font-medium hover:text-gray-800 dark:text-gray-300 ml-1 dark:hover:text-gray-400"
             >Contact us</a
           >
-          <a href="#" class="text-gray-300 ml-1 hover:text-gray-400"
+          <a
+            href="#"
+            class="text-gray-500 font-medium hover:text-gray-800 dark:text-gray-300 ml-1 dark:hover:text-gray-400"
             >Creators
           </a>
-          <a href="#" class="text-gray-300 ml-1 hover:text-gray-400"
+          <a
+            href="#"
+            class="text-gray-500 font-medium hover:text-gray-800 dark:text-gray-300 ml-1 dark:hover:text-gray-400"
             >Adveritse</a
           >
-          <a href="#" class="text-gray-300 ml-1 hover:text-gray-400"
+          <a
+            href="#"
+            class="text-gray-500 font-medium hover:text-gray-800 dark:text-gray-300 ml-1 dark:hover:text-gray-400"
             >Developers</a
           >
           <br />
           <br />
-          <a href="#" class="text-gray-300 ml-1 hover:text-gray-400">Terms</a>
-          <a href="#" class="text-gray-300 ml-1 hover:text-gray-400">Privacy</a>
-          <a href="#" class="text-gray-300 ml-1 hover:text-gray-400"
+          <a
+            href="#"
+            class="text-gray-500 font-medium hover:text-gray-800 dark:text-gray-300 ml-1 dark:hover:text-gray-400"
+            >Terms</a
+          >
+          <a
+            href="#"
+            class="text-gray-500 font-medium hover:text-gray-800 dark:text-gray-300 ml-1 dark:hover:text-gray-400"
+            >Privacy</a
+          >
+          <a
+            href="#"
+            class="text-gray-500 font-medium hover:text-gray-800 dark:text-gray-300 ml-1 dark:hover:text-gray-400"
             >Policy & Safety</a
           >
-          <a href="#" class="text-gray-300 ml-1 hover:text-gray-400"
+          <a
+            href="#"
+            class="text-gray-500 font-medium hover:text-gray-800 dark:text-gray-300 ml-1 dark:hover:text-gray-400"
             >How YouTube works</a
           >
-          <a href="#" class="text-gray-300 ml-1 hover:text-gray-400"
+          <a
+            href="#"
+            class="text-gray-500 font-medium hover:text-gray-800 dark:text-gray-300 ml-1 dark:hover:text-gray-400"
             >Test new features</a
           >
           <p class="text-gray-400 text-sm mt-3">&copy 2022 Google LLC</p>
@@ -682,59 +731,59 @@
       <div class="flex-auto bg-white dark:bg-[#0f0f0f] ml-64">
         <!-- suggest category -->
         <div
-          class="fixed h-12 flex items-center w-full dark:bg-[#0f0f0f] capitalize"
+          class="fixed h-12 flex items-center w-full bg-white dark:bg-[#0f0f0f] capitalize z-50"
         >
           <div class="items-center">
             <span
-              class="text-black bg-white p-1.5 px-2.5 ml-3 rounded-lg cursor-pointer text-sm"
+              class="text-white bg-black dark:text-black dark:bg-white p-1.5 px-2.5 ml-3 rounded-lg cursor-pointer text-sm"
               >All</span
             >
             <span
-              class="text-gray-200 bg-gray-800 p-1.5 px-2.5 ml-1.5 rounded-lg hover:bg-gray-700 duration-200 cursor-pointer text-sm"
+              class="text-gray-800 bg-gray-200 dark:text-gray-200 dark:bg-gray-800 p-1.5 px-2.5 ml-1.5 rounded-lg hover:text-gray-200 hover:bg-gray-800 dark:hover:bg-gray-700 duration-200 cursor-pointer text-sm"
               >web development</span
             >
             <span
-              class="text-gray-200 bg-gray-800 p-1.5 px-2.5 ml-1.5 rounded-lg hover:bg-gray-700 duration-200 cursor-pointer text-sm truncate ..."
+              class="text-gray-800 bg-gray-200 dark:text-gray-200 dark:bg-gray-800 p-1.5 px-2.5 ml-1.5 rounded-lg hover:text-gray-200 hover:bg-gray-800 dark:hover:bg-gray-700 duration-200 cursor-pointer text-sm truncate ..."
               >bangladesh national cricket team</span
             >
             <span
-              class="text-gray-200 bg-gray-800 p-1.5 px-2.5 ml-1.5 rounded-lg hover:bg-gray-700 duration-200 cursor-pointer text-sm"
+              class="text-gray-800 bg-gray-200 dark:text-gray-200 dark:bg-gray-800 p-1.5 px-2.5 ml-1.5 rounded-lg hover:text-gray-200 hover:bg-gray-800 dark:hover:bg-gray-700 duration-200 cursor-pointer text-sm"
               >javaScript</span
             >
             <span
-              class="text-gray-200 bg-gray-800 p-1.5 px-2.5 ml-1.5 rounded-lg hover:bg-gray-700 duration-200 cursor-pointer text-sm"
+              class="text-gray-800 bg-gray-200 dark:text-gray-200 dark:bg-gray-800 p-1.5 px-2.5 ml-1.5 rounded-lg hover:text-gray-200 hover:bg-gray-800 dark:hover:bg-gray-700 duration-200 cursor-pointer text-sm"
               >mobile phones</span
             >
             <span
-              class="text-gray-200 bg-gray-800 p-1.5 px-2.5 ml-1.5 rounded-lg hover:bg-gray-700 duration-200 cursor-pointer text-sm"
+              class="text-gray-800 bg-gray-200 dark:text-gray-200 dark:bg-gray-800 p-1.5 px-2.5 ml-1.5 rounded-lg hover:text-gray-200 hover:bg-gray-800 dark:hover:bg-gray-700 duration-200 cursor-pointer text-sm"
               >mixes</span
             >
             <span
-              class="text-gray-200 bg-gray-800 p-1.5 px-2.5 ml-1.5 rounded-lg hover:bg-gray-700 duration-200 cursor-pointer text-sm"
+              class="text-gray-800 bg-gray-200 dark:text-gray-200 dark:bg-gray-800 p-1.5 px-2.5 ml-1.5 rounded-lg hover:text-gray-200 hover:bg-gray-800 dark:hover:bg-gray-700 duration-200 cursor-pointer text-sm"
               >debates</span
             >
             <span
-              class="text-gray-200 bg-gray-800 p-1.5 px-2.5 ml-1.5 rounded-lg hover:bg-gray-700 duration-200 cursor-pointer text-sm"
+              class="text-gray-800 bg-gray-200 dark:text-gray-200 dark:bg-gray-800 p-1.5 px-2.5 ml-1.5 rounded-lg hover:text-gray-200 hover:bg-gray-800 dark:hover:bg-gray-700 duration-200 cursor-pointer text-sm"
               >music</span
             >
             <span
-              class="text-gray-200 bg-gray-800 p-1.5 px-2.5 ml-1.5 rounded-lg hover:bg-gray-700 duration-200 cursor-pointer text-sm"
+              class="text-gray-800 bg-gray-200 dark:text-gray-200 dark:bg-gray-800 p-1.5 px-2.5 ml-1.5 rounded-lg hover:text-gray-200 hover:bg-gray-800 dark:hover:bg-gray-700 duration-200 cursor-pointer text-sm"
               >live</span
             >
             <span
-              class="text-gray-200 bg-gray-800 p-1.5 px-2.5 ml-1.5 rounded-lg hover:bg-gray-700 duration-200 cursor-pointer text-sm"
+              class="text-gray-800 bg-gray-200 dark:text-gray-200 dark:bg-gray-800 p-1.5 px-2.5 ml-1.5 rounded-lg hover:text-gray-200 hover:bg-gray-800 dark:hover:bg-gray-700 duration-200 cursor-pointer text-sm"
               >Sheikh</span
             >
             <span
-              class="text-gray-200 bg-gray-800 p-1.5 px-2.5 ml-1.5 rounded-lg hover:bg-gray-700 duration-200 cursor-pointer text-sm"
+              class="text-gray-800 bg-gray-200 dark:text-gray-200 dark:bg-gray-800 p-1.5 px-2.5 ml-1.5 rounded-lg hover:text-gray-200 hover:bg-gray-800 dark:hover:bg-gray-700 duration-200 cursor-pointer text-sm"
               >AI</span
             >
             <span
-              class="text-gray-200 bg-gray-800 p-1.5 px-2.5 ml-1.5 rounded-lg hover:bg-gray-700 duration-200 cursor-pointer text-sm"
+              class="text-gray-800 bg-gray-200 dark:text-gray-200 dark:bg-gray-800 p-1.5 px-2.5 ml-1.5 rounded-lg hover:text-gray-200 hover:bg-gray-800 dark:hover:bg-gray-700 duration-200 cursor-pointer text-sm"
               >Gaming</span
             >
             <span
-              class="text-gray-200 bg-gray-800 p-1.5 px-2.5 ml-1.5 rounded-lg hover:bg-gray-700 duration-200 cursor-pointer text-sm"
+              class="text-gray-800 bg-gray-200 dark:text-gray-200 dark:bg-gray-800 p-1.5 px-2.5 ml-1.5 rounded-lg hover:text-gray-200 hover:bg-gray-800 dark:hover:bg-gray-700 duration-200 cursor-pointer text-sm"
               >new for you</span
             >
           </div>
@@ -745,12 +794,16 @@
             <!-- content container -->
             <div class="ml-3 w-[297px] h-[300px] cursor-pointer">
               <!-- ! thumbnile  -->
-              <div>
+              <div class="relative">
                 <img
                   class="w-[296px] object-cover rounded-[14px]"
                   src="./images/thumbnile/news24.webp"
                   alt=""
                 />
+                <span
+                  class="text-white bg-black -mt-[24px] right-0 mr-1 rounded-sm text-sm px-[3px] z-20 absolute"
+                  >19:17</span
+                >
               </div>
               <!-- ! content info  -->
               <div class="mt-2 flex">
@@ -761,18 +814,18 @@
                 />
                 <div class="px-2">
                   <h1
-                    class="text-slate-200 text-[15px] w-56 truncate ..."
+                    class="dark:text-slate-200 text-[15px] w-56 truncate ..."
                     title="গাড়ি চলছে আকাশ পথে ! | News24 "
                   >
                     গাড়ি চলছে আকাশ পথে ! | News24 গাড়ি চলছে আকাশ পথে ! |
                     News24
                   </h1>
                   <h2
-                    class="text-gray-400 text-[14px] mt-1 hover:text-gray-200 duration-100"
+                    class="dark:text-gray-400 text-[14px] mt-1 hover:text-gray-600 flex items-center dark:hover:text-gray-200 duration-100"
                   >
                     News24
                   </h2>
-                  <p class="text-gray-400 text-[13px]">
+                  <p class="text-gray-600 dark:text-gray-400 text-[13px]">
                     <span>253 views</span> -- <span>42 minutes ago</span>
                     <!-- &#8226 -->
                   </p>
@@ -782,12 +835,16 @@
 
             <div class="ml-3 w-[297px] h-[300px] cursor-pointer">
               <!-- ! thumbnile  -->
-              <div>
+              <div class="relative">
                 <img
                   class="w-[296px] object-cover rounded-[14px]"
                   src="./images/thumbnile/hq720.webp"
                   alt=""
                 />
+                <span
+                  class="text-white bg-black -mt-[24px] right-0 mr-1 rounded-sm text-sm px-[3px] z-20 absolute"
+                  >10:17</span
+                >
               </div>
               <!-- ! content info  -->
               <div class="mt-2 flex">
@@ -798,32 +855,32 @@
                 />
                 <div class="px-2">
                   <h1
-                    class="text-slate-200 text-[15px] w-56 truncate ..."
+                    class="dark:text-slate-200 text-[15px] w-56 truncate ..."
                     title="Are you clicking the wrong power option? - Shut Down vs Restart vs Sleep vs Hibernate!"
                   >
                     Are you clicking the wrong power option? - Shut Down vs
                     Restart vs Sleep vs Hibernate!
                   </h1>
                   <h2
-                    class="w-[200px] text-gray-400 text-[14px] mt-1 duration-100 flex items-center"
+                    class="dark:text-gray-400 text-[14px] mt-1 hover:text-gray-600 flex items-center dark:hover:text-gray-200 duration-100"
                   >
-                    <span class="hover:text-gray-200">Sohag360</span>
-
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      class="w-[14px] h-[14px] ml-1"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
+                    Sohag360
+                    <span class="text-gray-500"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-[14px] h-[14px] ml-1"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                          clip-rule="evenodd"
+                        /></svg
+                    ></span>
                   </h2>
 
-                  <p class="text-gray-400 text-[13px]">
+                  <p class="text-gray-600 dark:text-gray-400 text-[13px]">
                     <span>56k views</span> -- <span>2 hours ago</span>
                   </p>
                 </div>
@@ -832,12 +889,16 @@
 
             <div class="ml-3 w-[297px] h-[300px] cursor-pointer">
               <!-- ! thumbnile  -->
-              <div>
+              <div class="relative">
                 <img
                   class="w-[296px] object-cover rounded-[14px]"
                   src="./images/thumbnile/hq720 (1).webp"
                   alt=""
                 />
+                <span
+                  class="text-white bg-black -mt-[24px] right-0 mr-1 rounded-sm text-sm px-[3px] z-20 absolute"
+                  >22:24</span
+                >
               </div>
               <!-- ! content info  -->
               <div class="mt-2 flex">
@@ -848,29 +909,30 @@
                 />
                 <div class="px-2">
                   <h1
-                    class="text-slate-200 text-[15px] w-56 truncate ..."
+                    class="dark:text-slate-200 text-[15px] w-56 truncate ..."
                     title="JAPAN STREET FOOD of Harajuku in Tokyo"
                   >
                     JAPAN STREET FOOD of Harajuku in Tokyo
                   </h1>
                   <h2
-                    class="text-gray-400 text-[14px] mt-1 duration-100 flex items-center"
+                    class="dark:text-gray-400 text-[14px] mt-1 hover:text-gray-600 flex items-center dark:hover:text-gray-200 duration-100"
                   >
-                    <span class="hover:text-gray-200">Rafsan TheChotoBhai</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      class="w-[14px] h-[14px] ml-1"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
+                    Rafsan TheChotoBhai
+                    <span class="text-gray-500"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-[14px] h-[14px] ml-1"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                          clip-rule="evenodd"
+                        /></svg
+                    ></span>
                   </h2>
-                  <p class="text-gray-400 text-[13px]">
+                  <p class="text-gray-600 dark:text-gray-400 text-[13px]">
                     <span>256k views</span> -- <span>5 hours ago</span>
                   </p>
                 </div>
@@ -879,12 +941,16 @@
 
             <div class="ml-3 w-[297px] h-[300px] cursor-pointer">
               <!-- ! thumbnile  -->
-              <div>
+              <div class="relative">
                 <img
                   class="w-[296px] object-cover rounded-[14px]"
                   src="./images/thumbnile/hq720 (2).webp"
                   alt=""
                 />
+                <span
+                  class="text-white bg-black -mt-[24px] right-0 mr-1 rounded-sm text-sm px-[3px] z-20 absolute"
+                  >5:14</span
+                >
               </div>
               <!-- ! content info  -->
               <div class="mt-2 flex">
@@ -895,30 +961,31 @@
                 />
                 <div class="px-2">
                   <h1
-                    class="text-slate-200 text-[15px] w-56 truncate ..."
+                    class="dark:text-slate-200 text-[15px] w-56 truncate ..."
                     title="তুষারঝড়ে বিপর্যস্ত কানাডা, স্থবির জনজীবন | Canada News | Snowfall | Winter Weather | Somoy TV by SOMOY TV "
                   >
                     তুষারঝড়ে বিপর্যস্ত কানাডা, স্থবির জনজীবন | Canada News |
                     Snowfall | Winter Weather | Somoy TV by SOMOY TV
                   </h1>
                   <h2
-                    class="text-gray-400 text-[14px] mt-1 duration-100 flex items-center"
+                    class="dark:text-gray-400 text-[14px] mt-1 hover:text-gray-600 flex items-center dark:hover:text-gray-200 duration-100"
                   >
-                    <span class="hover:text-gray-200">SOMOY TV</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      class="w-[14px] h-[14px] ml-1"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
+                    SOMOY TV
+                    <span class="text-gray-500"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-[14px] h-[14px] ml-1"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                          clip-rule="evenodd"
+                        /></svg
+                    ></span>
                   </h2>
-                  <p class="text-gray-400 text-[13px]">
+                  <p class="text-gray-600 dark:text-gray-400 text-[13px]">
                     <span>5.3k views</span> -- <span>24 minutes ago</span>
                   </p>
                 </div>
@@ -927,12 +994,16 @@
 
             <div class="ml-3 w-[297px] h-[300px] cursor-pointer">
               <!-- ! thumbnile  -->
-              <div>
+              <div class="relative">
                 <img
                   class="w-[296px] object-cover rounded-[14px]"
                   src="./images/thumbnile/hq720 (3).webp"
                   alt=""
                 />
+                <span
+                  class="text-white bg-black -mt-[24px] right-0 mr-1 rounded-sm text-sm px-[3px] z-20 absolute"
+                  >1:17:24</span
+                >
               </div>
               <!-- ! content info  -->
               <div class="mt-2 flex">
@@ -943,18 +1014,18 @@
                 />
                 <div class="px-2">
                   <h1
-                    class="text-slate-200 text-[15px] w-56 truncate ..."
+                    class="dark:text-slate-200 text-[15px] w-56 truncate ..."
                     title="Surah Yasin,Surah Ar Rahman, Surah al waqiah, Surah Al Mulk (Be Heaven)  by Relaxing Quran "
                   >
                     Surah Yasin,Surah Ar Rahman, Surah al waqiah, Surah Al Mulk
                     (Be Heaven) by Relaxing Quran
                   </h1>
                   <h2
-                    class="text-gray-400 text-[14px] mt-1 duration-100 flex items-center"
+                    class="dark:text-gray-400 text-[14px] mt-1 hover:text-gray-600 flex items-center dark:hover:text-gray-200 duration-100"
                   >
-                    <span class="hover:text-gray-200">Relaxing Quran</span>
+                    Relaxing Quran
                   </h2>
-                  <p class="text-gray-400 text-[13px]">
+                  <p class="text-gray-600 dark:text-gray-400 text-[13px]">
                     <span>84k views</span> -- <span>Streamed 1 month ago </span>
                   </p>
                 </div>
@@ -963,12 +1034,16 @@
             <!-- content contianer end -->
             <div class="ml-3 w-[297px] h-[300px] cursor-pointer">
               <!-- ! thumbnile  -->
-              <div>
+              <div class="relative">
                 <img
                   class="w-[296px] object-cover rounded-[14px]"
                   src="./images/thumbnile/hq720 (4).webp"
                   alt=""
                 />
+                <span
+                  class="text-white bg-black -mt-[24px] right-0 mr-1 rounded-sm text-sm px-[3px] z-20 absolute"
+                  >3:13:45</span
+                >
               </div>
               <!-- ! content info  -->
               <div class="mt-2 flex">
@@ -979,18 +1054,18 @@
                 />
                 <div class="px-2">
                   <h1
-                    class="text-slate-200 text-[15px] w-56 truncate ..."
+                    class="dark:text-slate-200 text-[15px] w-56 truncate ..."
                     title="Lecture 56 - Clean YouTube Project | React Router Dom and API Bug Fixing | Full-stack Army by Stack Learner  "
                   >
                     Lecture 56 - Clean YouTube Project | React Router Dom and
                     API Bug Fixing | Full-stack Army by Stack Learner
                   </h1>
                   <h2
-                    class="text-gray-400 text-[14px] mt-1 duration-100 flex items-center"
+                    class="dark:text-gray-400 text-[14px] mt-1 hover:text-gray-600 flex items-center dark:hover:text-gray-200 duration-100"
                   >
-                    <span class="hover:text-gray-200">Stack Learner</span>
+                    Stack Learner
                   </h2>
-                  <p class="text-gray-400 text-[13px]">
+                  <p class="text-gray-600 dark:text-gray-400 text-[13px]">
                     <span>1k views</span> -- <span> 1 day ago </span>
                   </p>
                 </div>
@@ -999,12 +1074,16 @@
             <!-- content contianer end -->
             <div class="ml-3 w-[297px] h-[300px] cursor-pointer">
               <!-- ! thumbnile  -->
-              <div>
+              <div class="relative">
                 <img
                   class="w-[296px] object-cover rounded-[14px]"
                   src="./images/thumbnile/hq720 (5).webp"
                   alt=""
                 />
+                <span
+                  class="text-white bg-black -mt-[24px] right-0 mr-1 rounded-sm text-sm px-[3px] z-20 absolute"
+                  >18:22</span
+                >
               </div>
               <!-- ! content info  -->
               <div class="mt-2 flex">
@@ -1015,29 +1094,30 @@
                 />
                 <div class="px-2">
                   <h1
-                    class="text-slate-200 text-[15px] w-56 truncate ..."
+                    class="dark:text-slate-200 text-[15px] w-56 truncate ..."
                     title="সিরাহ ৭ – অ্যাবিসিনিয়া | Bangla Seerah by Baseera   "
                   >
                     সিরাহ ৭ – অ্যাবিসিনিয়া | Bangla Seerah by Baseera
                   </h1>
                   <h2
-                    class="text-gray-400 text-[14px] mt-1 duration-100 flex items-center"
+                    class="dark:text-gray-400 text-[14px] mt-1 hover:text-gray-600 flex items-center dark:hover:text-gray-200 duration-100"
                   >
-                    <span class="hover:text-gray-200">Baseera</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      class="w-[14px] h-[14px] ml-1"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
+                    Baseera
+                    <span class="text-gray-500"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-[14px] h-[14px] ml-1"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                          clip-rule="evenodd"
+                        /></svg
+                    ></span>
                   </h2>
-                  <p class="text-gray-400 text-[13px]">
+                  <p class="text-gray-600 dark:text-gray-400 text-[13px]">
                     <span>447k views</span> -- <span> 1 months ago </span>
                   </p>
                 </div>
@@ -1047,12 +1127,16 @@
 
             <div class="ml-3 w-[297px] h-[300px] cursor-pointer">
               <!-- ! thumbnile  -->
-              <div>
+              <div class="relative">
                 <img
                   class="w-[296px] object-cover rounded-[14px]"
                   src="./images/thumbnile/hq720 (6).webp"
                   alt=""
                 />
+                <span
+                  class="text-white bg-black -mt-[24px] right-0 mr-1 rounded-sm text-sm px-[3px] z-20 absolute"
+                  >25:47</span
+                >
               </div>
               <!-- ! content info  -->
               <div class="mt-2 flex">
@@ -1063,30 +1147,32 @@
                 />
                 <div class="px-2">
                   <h1
-                    class="text-slate-200 text-[15px] w-56 truncate ..."
+                    class="dark:text-slate-200 text-[15px] w-56 truncate ..."
                     title="I'm The Best Muslim - Season 1 & 2 | Must Watch Before Season 3 by FreeQuranEducation   "
                   >
                     I'm The Best Muslim - Season 1 & 2 | Must Watch Before
                     Season 3 by FreeQuranEducation
                   </h1>
                   <h2
-                    class="text-gray-400 text-[14px] mt-1 duration-100 flex items-center"
+                    class="dark:text-gray-400 text-[14px] mt-1 hover:text-gray-600 flex items-center dark:hover:text-gray-200 duration-100"
                   >
-                    <span class="hover:text-gray-200">FreeQuranEducation</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      class="w-[14px] h-[14px] ml-1"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
+                    FreeQuranEducation
+
+                    <span class="text-gray-500"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-[14px] h-[14px] ml-1"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                          clip-rule="evenodd"
+                        /></svg
+                    ></span>
                   </h2>
-                  <p class="text-gray-400 text-[13px]">
+                  <p class="text-gray-600 dark:text-gray-400 text-[13px]">
                     <span>197k views</span> -- <span> 2 months ago </span>
                   </p>
                 </div>
@@ -1097,14 +1183,16 @@
           </div>
         </div>
 
-        <div class="border-t-4 -mt-10 border-t-gray-600">
+        <div class="-mt-10">
           <div class="my-2 flex items-center w-12 h-12">
             <img
               class="object-contain"
               src="./images/youtube-shorts-logo.svg"
               alt=""
             />
-            <h2 class="text-gray-100 text-[20px] font-normal mt-2">Shorts</h2>
+            <h2 class="dark:text-gray-100 text-[20px] font-normal mt-2">
+              Shorts
+            </h2>
           </div>
           <div class="flex flex-wrap">
             <div class="w-[162px] h-[400px] mt-4 ml-2.5 cursor-pointer">
@@ -1113,10 +1201,12 @@
                 src="./images/shorts/hq720_2.webp"
                 alt=""
               />
-              <h4 class="text-gray-200 text-sm pl-1 pr-2 mt-2">
+              <h4 class="dark:text-gray-200 text-sm pl-1 pr-2 mt-2">
                 ৳৫০০ আলবেনিয়ার স্টাফড ক্যাপসিকাম ও বেগুন 🇦🇱
               </h4>
-              <span class="text-gray-300 pl-1 mt-1 text-sm">5.2k views</span>
+              <span class="text-gray-500 dark:text-gray-200 pl-1 mt-1 text-sm"
+                >5.2k views</span
+              >
             </div>
             <div class="w-[162px] h-[400px] mt-4 ml-2.5 cursor-pointer">
               <img
@@ -1124,10 +1214,12 @@
                 src="./images/shorts/hq720_2 (1).webp"
                 alt=""
               />
-              <h4 class="text-gray-200 text-sm pl-1 pr-2 mt-2">
+              <h4 class="dark:text-gray-200 text-sm pl-1 pr-2 mt-2">
                 Baby Say Their First Words : Try Not To Laugh ! |
               </h4>
-              <span class="text-gray-300 pl-1 mt-1 text-sm">5.6M views</span>
+              <span class="text-gray-500 dark:text-gray-300 pl-1 mt-1 text-sm"
+                >5.6M views</span
+              >
             </div>
             <div class="w-[162px] h-[400px] mt-4 ml-2.5 cursor-pointer">
               <img
@@ -1135,10 +1227,12 @@
                 src="./images/shorts/hq720_2 (2).webp"
                 alt=""
               />
-              <h4 class="text-gray-200 text-sm pl-1 pr-2 mt-2">
+              <h4 class="dark:text-gray-200 text-sm pl-1 pr-2 mt-2">
                 Human Heart. #shorts
               </h4>
-              <span class="text-gray-300 pl-1 mt-1 text-sm">812k views</span>
+              <span class="text-gray-500 dark:text-gray-300 pl-1 mt-1 text-sm"
+                >812k views</span
+              >
             </div>
             <div class="w-[162px] h-[400px] mt-4 ml-2.5 cursor-pointer">
               <img
@@ -1146,10 +1240,12 @@
                 src="./images/shorts/hq720_2 (3).webp"
                 alt=""
               />
-              <h4 class="text-gray-200 text-sm pl-1 pr-2 mt-2">
+              <h4 class="dark:text-gray-200 text-sm pl-1 pr-2 mt-2">
                 Best Transformation In The World.
               </h4>
-              <span class="text-gray-300 pl-1 mt-1 text-sm">11M views</span>
+              <span class="text-gray-500 dark:text-gray-300 pl-1 mt-1 text-sm"
+                >11M views</span
+              >
             </div>
             <div class="w-[162px] h-[400px] mt-4 ml-2.5 cursor-pointer">
               <img
@@ -1157,8 +1253,10 @@
                 src="./images/shorts/hq720_2 (4).webp"
                 alt=""
               />
-              <h4 class="text-gray-200 text-sm pl-1 pr-2 mt-2">Kaaba</h4>
-              <span class="text-gray-300 pl-1 mt-1 text-sm">5.2k views</span>
+              <h4 class="dark:text-gray-200 text-sm pl-1 pr-2 mt-2">Kaaba</h4>
+              <span class="text-gray-500 dark:text-gray-300 pl-1 mt-1 text-sm"
+                >5.2k views</span
+              >
             </div>
             <div class="w-[162px] h-[400px] mt-4 ml-2.5 cursor-pointer">
               <img
@@ -1166,10 +1264,12 @@
                 src="./images/shorts/hq720_2 (5).webp"
                 alt=""
               />
-              <h4 class="text-gray-200 text-sm pl-1 pr-2 mt-2">
+              <h4 class="dark:text-gray-200 text-sm pl-1 pr-2 mt-2">
                 ঝাল মুড়ি খেলে মরণ নিশ্চিত
               </h4>
-              <span class="text-gray-300 pl-1 mt-1 text-sm">843k views</span>
+              <span class="text-gray-500 dark:text-gray-300 pl-1 mt-1 text-sm"
+                >843k views</span
+              >
             </div>
             <div class="w-[162px] h-[400px] mt-4 ml-2.5 cursor-pointer">
               <img
@@ -1177,14 +1277,16 @@
                 src="./images/shorts/hq720_2 (6).webp"
                 alt=""
               />
-              <h4 class="text-gray-200 text-sm pl-1 pr-2 mt-2">Cute 😲</h4>
-              <span class="text-gray-300 pl-1 mt-1 text-sm">15M views</span>
+              <h4 class="dark:text-gray-200 text-sm pl-1 pr-2 mt-2">Cute 😲</h4>
+              <span class="text-gray-500 dark:text-gray-300 pl-1 mt-1 text-sm"
+                >15M views</span
+              >
             </div>
           </div>
         </div>
 
         <div
-          class="text-white hover:bg-slate-600 duration-150 py-2 cursor-pointer flex items-center justify-center border-b-4 border-b-gray-600"
+          class="text-gray-600 bg-gray-100 hover:bg-gray-300 dark:text-white dark:bg-gray-800 hover:dark:bg-slate-600 duration-150 py-2 cursor-pointer flex items-center justify-center"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -1206,12 +1308,16 @@
           <div class="flex flex-wrap">
             <div class="ml-3 w-[297px] h-[300px] cursor-pointer">
               <!-- ! thumbnile  -->
-              <div>
+              <div class="relative">
                 <img
                   class="w-[296px] object-cover rounded-[14px]"
                   src="./images/thumbnile/hq720 (7).webp"
                   alt=""
                 />
+                <span
+                  class="text-white bg-black -mt-[24px] right-0 mr-1 rounded-sm text-sm px-[3px] z-20 absolute"
+                  >6:17</span
+                >
               </div>
               <!-- ! content info  -->
               <div class="mt-2 flex">
@@ -1222,30 +1328,31 @@
                 />
                 <div class="px-2">
                   <h1
-                    class="text-slate-200 text-[15px] w-56 truncate ..."
+                    class="dark:text-slate-200 text-[15px] w-56 truncate ..."
                     title="যুক্তরাষ্ট্রের তাপমাত্রা হিমাঙ্কের নিচে; পানি ছুড়লেও হয়ে যাচ্ছে বরফ! | World Snow Storm by Jamuna TV    "
                   >
                     যুক্তরাষ্ট্রের তাপমাত্রা হিমাঙ্কের নিচে; পানি ছুড়লেও হয়ে
                     যাচ্ছে বরফ! | World Snow Storm by Jamuna TV
                   </h1>
                   <h2
-                    class="text-gray-400 text-[14px] mt-1 duration-100 flex items-center"
+                    class="dark:text-gray-400 text-[14px] mt-1 hover:text-gray-600 flex items-center dark:hover:text-gray-200 duration-100"
                   >
-                    <span class="hover:text-gray-200">Jamuna TV</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      class="w-[14px] h-[14px] ml-1"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
+                    Jamuna TV
+                    <span class="text-gray-500"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-[14px] h-[14px] ml-1"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                          clip-rule="evenodd"
+                        /></svg
+                    ></span>
                   </h2>
-                  <p class="text-gray-400 text-[13px]">
+                  <p class="text-gray-600 dark:text-gray-400 text-[13px]">
                     <span>57k views</span> -- <span> 11 hours ago </span>
                   </p>
                 </div>
@@ -1255,12 +1362,16 @@
 
             <div class="ml-3 w-[297px] h-[300px] cursor-pointer">
               <!-- ! thumbnile  -->
-              <div>
+              <div class="relative">
                 <img
                   class="w-[296px] object-cover rounded-[14px]"
                   src="./images/thumbnile/hq720 (8).webp"
                   alt=""
                 />
+                <span
+                  class="text-white bg-black -mt-[24px] right-0 mr-1 rounded-sm text-sm px-[3px] z-20 absolute"
+                  >3:56</span
+                >
               </div>
               <!-- ! content info  -->
               <div class="mt-2 flex">
@@ -1271,32 +1382,31 @@
                 />
                 <div class="px-2">
                   <h1
-                    class="text-slate-200 text-[15px] w-56 truncate ..."
+                    class="dark:text-slate-200 text-[15px] w-56 truncate ..."
                     title="কেকেআরের জার্সিতে আইপিএল মাতাবেন সাকিব ও লিটন || Kolkata Knight Riders by Independent Television     "
                   >
                     কেকেআরের জার্সিতে আইপিএল মাতাবেন সাকিব ও লিটন || Kolkata
                     Knight Riders by Independent Television
                   </h1>
                   <h2
-                    class="text-gray-400 text-[14px] mt-1 duration-100 flex items-center"
+                    class="dark:text-gray-400 text-[14px] mt-1 hover:text-gray-600 flex items-center dark:hover:text-gray-200 duration-100"
                   >
-                    <span class="hover:text-gray-200"
-                      >Independent Television</span
-                    >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      class="w-[14px] h-[14px] ml-1"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
+                    Independent Television
+                    <span class="text-gray-500"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-[14px] h-[14px] ml-1"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                          clip-rule="evenodd"
+                        /></svg
+                    ></span>
                   </h2>
-                  <p class="text-gray-400 text-[13px]">
+                  <p class="text-gray-600 dark:text-gray-400 text-[13px]">
                     <span>4.5k views</span> -- <span> 9 hours ago </span>
                   </p>
                 </div>
@@ -1306,12 +1416,16 @@
 
             <div class="ml-3 w-[297px] h-[300px] cursor-pointer">
               <!-- ! thumbnile  -->
-              <div>
+              <div class="relative">
                 <img
                   class="w-[296px] object-cover rounded-[14px]"
                   src="./images/thumbnile/hq720 (9).webp"
                   alt=""
                 />
+                <span
+                  class="text-white bg-black -mt-[24px] right-0 mr-1 rounded-sm text-sm px-[3px] z-20 absolute"
+                  >22:36</span
+                >
               </div>
               <!-- ! content info  -->
               <div class="mt-2 flex">
@@ -1322,18 +1436,18 @@
                 />
                 <div class="px-2">
                   <h1
-                    class="text-slate-200 text-[15px] w-56 truncate ..."
+                    class="dark:text-slate-200 text-[15px] w-56 truncate ..."
                     title="আবু রায়হান এর বাছাইকৃত সেরা ১০ টি গজল || Abu Rayhan Top 10 Nashed || Bangla Top 10 Islamic Song 2021 by SIP143 "
                   >
                     আবু রায়হান এর বাছাইকৃত সেরা ১০ টি গজল || Abu Rayhan Top 10
                     Nashed || Bangla Top 10 Islamic Song 2021 by SIP143
                   </h1>
                   <h2
-                    class="text-gray-400 text-[14px] mt-1 duration-100 flex items-center"
+                    class="dark:text-gray-400 text-[14px] mt-1 hover:text-gray-600 flex items-center dark:hover:text-gray-200 duration-100"
                   >
-                    <span class="hover:text-gray-200">SIP143</span>
+                    SIP143
                   </h2>
-                  <p class="text-gray-400 text-[13px]">
+                  <p class="text-gray-600 dark:text-gray-400 text-[13px]">
                     <span>5.2M views</span> -- <span> 1 year ago </span>
                   </p>
                 </div>
@@ -1343,12 +1457,16 @@
 
             <div class="ml-3 w-[297px] h-[300px] cursor-pointer">
               <!-- ! thumbnile  -->
-              <div>
+              <div class="relative">
                 <img
                   class="w-[296px] object-cover rounded-[14px]"
                   src="./images/thumbnile/hq720 (10).webp"
                   alt=""
                 />
+                <span
+                  class="text-white bg-black -mt-[24px] right-0 mr-1 rounded-sm text-sm px-[3px] z-20 absolute"
+                  >45:24</span
+                >
               </div>
               <!-- ! content info  -->
               <div class="mt-2 flex">
@@ -1359,30 +1477,32 @@
                 />
                 <div class="px-2">
                   <h1
-                    class="text-slate-200 text-[15px] w-56 truncate ..."
+                    class="dark:text-slate-200 text-[15px] w-56 truncate ..."
                     title="Bachelor Point | Season 4 | EPISODE 115 | Kajal Arefin Ome | Dhruba Tv Drama Serial by Dhruba TV "
                   >
                     Bachelor Point | Season 4 | EPISODE 115 | Kajal Arefin Ome |
                     Dhruba Tv Drama Serial by Dhruba TV
                   </h1>
                   <h2
-                    class="text-gray-400 text-[14px] mt-1 duration-100 flex items-center"
+                    class="dark:text-gray-400 text-[14px] mt-1 hover:text-gray-600 flex items-center dark:hover:text-gray-200 duration-100"
                   >
-                    <span class="hover:text-gray-200">Dhruba TV</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      class="w-[14px] h-[14px] ml-1"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
+                    Dhruba TV
+
+                    <span class="text-gray-500"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-[14px] h-[14px] ml-1"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                          clip-rule="evenodd"
+                        /></svg
+                    ></span>
                   </h2>
-                  <p class="text-gray-400 text-[13px]">
+                  <p class="text-gray-600 dark:text-gray-400 text-[13px]">
                     <span>2M views</span> -- <span> 12 hours ago </span>
                   </p>
                 </div>
@@ -1392,14 +1512,14 @@
           </div>
         </div>
 
-        <div class="border-t-4 border-t-gray-600">
+        <div>
           <div class="my-2 items-center">
-            <h2 class="text-gray-100 text-[20px] font-normal mt-4 ml-2">
+            <h2 class="dark:text-gray-100 text-[20px] font-normal mt-4 ml-2">
               Latest YouTube Posts
             </h2>
             <div class="flex mt-4">
               <div
-                class="bg-gray-800 w-[400px] h-[210px] p-4 rounded-lg cursor-pointer ml-2"
+                class="border-2 dark:border-none dark:bg-gray-800 w-[400px] h-[210px] p-4 rounded-lg cursor-pointer ml-2"
               >
                 <div class="flex items-center">
                   <img
@@ -1407,13 +1527,18 @@
                     src="./images/latest-posts/unnamed1.jpg"
                     alt=""
                   />
-                  <p class="ml-2 text-[12px] text-gray-300">
-                    <span class="hover:text-gray-100">T Sports</span> --
-                    <span class="hover:text-gray-100">57 minutes ago</span>
+                  <p class="ml-2 text-[12px] text-gray-700 dark:text-gray-300">
+                    <span class="hover:text-gray-900 dark:hover:text-gray-100"
+                      >T Sports</span
+                    >
+                    --
+                    <span class="hover:text-gray-900 dark:hover:text-gray-100"
+                      >57 minutes ago</span
+                    >
                   </p>
                 </div>
                 <div class="flex mt-2">
-                  <p class="text-gray-200 pr-2">
+                  <p class="dark:text-gray-200 pr-2">
                     চতুর্থ দিনে জয়ের জন্য বাংলাদেশের দরকার ৬ উইকেট।
                   </p>
                   <img
@@ -1425,7 +1550,7 @@
                 <div class="flex justify-between mt-2">
                   <div class="flex">
                     <span
-                      class="text-gray-200 p-1 rounded-full hover:bg-gray-600 duration-150"
+                      class="dark:text-gray-200 p-1 rounded-full hover:bg-gray-200 dark:hover:bg-gray-600 duration-150"
                       ><svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -1441,11 +1566,11 @@
                         />
                       </svg>
                     </span>
-                    <span class="text-gray-200 text-[13px] mt-2 ml-0.5"
+                    <span class="dark:text-gray-200 text-[13px] mt-2 ml-0.5"
                       >1.5k</span
                     >
                     <span
-                      class="text-gray-200 ml-3 p-1 rounded-full hover:bg-gray-600 duration-150"
+                      class="dark:text-gray-200 ml-3 p-1 rounded-full hover:bg-gray-200 dark:hover:bg-gray-600 duration-150"
                       ><svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -1464,9 +1589,9 @@
                   </div>
                   <div class="flex p-1">
                     <p
-                      class="flex mr-3 hover:bg-gray-600 duration-150 rounded-md px-1 py-1"
+                      class="flex mr-3 hover:bg-gray-200 dark:hover:bg-gray-600 duration-150 rounded-md px-1 py-1"
                     >
-                      <span class="text-gray-200"
+                      <span class="dark:text-gray-200"
                         ><svg
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
@@ -1481,9 +1606,11 @@
                             d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
                           />
                         </svg> </span
-                      ><span class="text-white ml-1 mr-1 text-[12px]">12</span>
+                      ><span class="dark:text-white ml-1 mr-1 text-[12px]"
+                        >12</span
+                      >
                     </p>
-                    <span class="text-white -mr-3"
+                    <span class="dark:text-white -mr-3"
                       ><svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -1504,7 +1631,7 @@
               </div>
               <!-- post container end -->
               <div
-                class="bg-gray-800 w-[400px] h-[210px] p-4 rounded-lg cursor-pointer ml-2"
+                class="border-2 dark:border-none dark:bg-gray-800 w-[400px] h-[210px] p-4 rounded-lg cursor-pointer ml-2"
               >
                 <div class="flex items-center">
                   <img
@@ -1512,13 +1639,18 @@
                     src="./images/latest-posts/unnamed2.jpg"
                     alt=""
                   />
-                  <p class="ml-2 text-[12px] text-gray-300">
-                    <span class="hover:text-gray-100">Taw Haa Tv</span> --
-                    <span class="hover:text-gray-100">1 day ago</span>
+                  <p class="ml-2 text-[12px] text-gray-700 dark:text-gray-300">
+                    <span class="hover:text-gray-900 dark:hover:text-gray-100"
+                      >Taw Haa Tv</span
+                    >
+                    --
+                    <span class="hover:text-gray-900 dark:hover:text-gray-100"
+                      >57 minutes ago</span
+                    >
                   </p>
                 </div>
                 <div class="flex mt-2">
-                  <p class="text-gray-200 pr-2">
+                  <p class="dark:text-gray-200 pr-2">
                     রাত যত গভীর হয় সুবহে সাদিক তত সন্নিকটে, জালেমের জুলুম যত
                     বেড়ে যাবে ,মজলুমের বিজয়ের সময়ও নিকটে চলে আসবে ইনশাআল্লাহ।
                   </p>
@@ -1531,7 +1663,7 @@
                 <div class="flex justify-between mt-2">
                   <div class="flex">
                     <span
-                      class="text-gray-200 p-1 rounded-full hover:bg-gray-600 duration-150"
+                      class="dark:text-gray-200 p-1 rounded-full hover:bg-gray-200 dark:hover:bg-gray-600 duration-150"
                       ><svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -1547,11 +1679,11 @@
                         />
                       </svg>
                     </span>
-                    <span class="text-gray-200 text-[13px] mt-2 ml-0.5"
-                      >6.9k</span
+                    <span class="dark:text-gray-200 text-[13px] mt-2 ml-0.5"
+                      >4.6k</span
                     >
                     <span
-                      class="text-gray-200 ml-3 p-1 rounded-full hover:bg-gray-600 duration-150"
+                      class="dark:text-gray-200 ml-3 p-1 rounded-full hover:bg-gray-200 dark:hover:bg-gray-600 duration-150"
                       ><svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -1570,9 +1702,9 @@
                   </div>
                   <div class="flex p-1">
                     <p
-                      class="flex mr-3 hover:bg-gray-600 duration-150 rounded-md px-1 py-1"
+                      class="flex mr-3 hover:bg-gray-200 dark:hover:bg-gray-600 duration-150 rounded-md px-1 py-1"
                     >
-                      <span class="text-gray-200"
+                      <span class="dark:text-gray-200"
                         ><svg
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
@@ -1587,9 +1719,11 @@
                             d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
                           />
                         </svg> </span
-                      ><span class="text-white ml-1 mr-1 text-[12px]">31</span>
+                      ><span class="dark:text-white ml-1 mr-1 text-[12px]"
+                        >216</span
+                      >
                     </p>
-                    <span class="text-white -mr-3"
+                    <span class="dark:text-white -mr-3"
                       ><svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -1610,7 +1744,7 @@
               </div>
               <!-- post container end -->
               <div
-                class="bg-gray-800 w-[400px] h-[210px] p-4 rounded-lg cursor-pointer ml-2"
+                class="border-2 dark:border-none dark:bg-gray-800 w-[400px] h-[210px] p-4 rounded-lg cursor-pointer ml-2"
               >
                 <div class="flex items-center">
                   <img
@@ -1618,20 +1752,22 @@
                     src="./images/latest-posts/unnamed3.jpg"
                     alt=""
                   />
-                  <p class="ml-2 text-[12px] text-gray-300">
-                    <span class="hover:text-gray-100"
+                  <p class="ml-2 text-[12px] text-gray-700 dark:text-gray-300">
+                    <span class="hover:text-gray-900 dark:hover:text-gray-100"
                       >Mizanur Rahman Azhari</span
                     >
                     --
-                    <span class="hover:text-gray-100">1 day ago</span>
+                    <span class="hover:text-gray-900 dark:hover:text-gray-100"
+                      >1 day ago</span
+                    >
                   </p>
                 </div>
                 <div class="flex mt-2">
-                  <p class="text-gray-200 pr-2">
+                  <p class="dark:text-gray-200 pr-2">
                     আখিরাতমুখী হোন, দুনিয়া আপনাতেই এসে ধরা দিবে।
                   </p>
                   <img
-                    class="w-[116px] h-[116px] rounded-md object-contain"
+                    class="w-[116px] h-[116px] rounded-md"
                     src="./images/latest-posts/post3.jpg"
                     alt=""
                   />
@@ -1639,7 +1775,7 @@
                 <div class="flex justify-between mt-2">
                   <div class="flex">
                     <span
-                      class="text-gray-200 p-1 rounded-full hover:bg-gray-600 duration-150"
+                      class="dark:text-gray-200 p-1 rounded-full hover:bg-gray-200 dark:hover:bg-gray-600 duration-150"
                       ><svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -1655,11 +1791,11 @@
                         />
                       </svg>
                     </span>
-                    <span class="text-gray-200 text-[13px] mt-2 ml-0.5"
-                      >7.6k</span
+                    <span class="dark:text-gray-200 text-[13px] mt-2 ml-0.5"
+                      >8.5k</span
                     >
                     <span
-                      class="text-gray-200 ml-3 p-1 rounded-full hover:bg-gray-600 duration-150"
+                      class="dark:text-gray-200 ml-3 p-1 rounded-full hover:bg-gray-200 dark:hover:bg-gray-600 duration-150"
                       ><svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -1678,9 +1814,9 @@
                   </div>
                   <div class="flex p-1">
                     <p
-                      class="flex mr-3 hover:bg-gray-600 duration-150 rounded-md px-1 py-1"
+                      class="flex mr-3 hover:bg-gray-200 dark:hover:bg-gray-600 duration-150 rounded-md px-1 py-1"
                     >
-                      <span class="text-gray-200"
+                      <span class="dark:text-gray-200"
                         ><svg
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
@@ -1695,9 +1831,11 @@
                             d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
                           />
                         </svg> </span
-                      ><span class="text-white ml-1 mr-1 text-[12px]">138</span>
+                      ><span class="dark:text-white ml-1 mr-1 text-[12px]"
+                        >890</span
+                      >
                     </p>
-                    <span class="text-white -mr-3"
+                    <span class="dark:text-white -mr-3"
                       ><svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -1722,7 +1860,7 @@
           </div>
         </div>
         <div
-          class="text-white hover:bg-slate-600 duration-150 py-2 cursor-pointer flex items-center justify-center border-b-4 border-b-gray-600"
+          class="text-gray-600 bg-gray-100 hover:bg-gray-300 dark:text-white dark:bg-gray-800 hover:dark:bg-slate-600 duration-150 py-2 cursor-pointer flex items-center justify-center"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -1746,12 +1884,16 @@
           <div class="flex flex-wrap">
             <div class="ml-3 w-[297px] h-[300px] cursor-pointer">
               <!-- ! thumbnile  -->
-              <div>
+              <div class="relative">
                 <img
                   class="w-[296px] object-cover rounded-[14px]"
                   src="./images/thumbnile/hq720 (11).webp"
                   alt=""
                 />
+                <span
+                  class="text-white bg-black -mt-[24px] right-0 mr-1 rounded-sm text-sm px-[3px] z-20 absolute"
+                  >14:47</span
+                >
               </div>
               <!-- ! content info  -->
               <div class="mt-2 flex">
@@ -1762,30 +1904,31 @@
                 />
                 <div class="px-2">
                   <h1
-                    class="text-slate-200 text-[15px] w-56 truncate ..."
+                    class="dark:text-slate-200 text-[15px] w-56 truncate ..."
                     title="React JS Interview Questions ( Pagination ) - Frontend Machine Coding Interview Experience by RoadsideCoder "
                   >
                     React JS Interview Questions ( Pagination ) - Frontend
                     Machine Coding Interview Experience by RoadsideCoder
                   </h1>
                   <h2
-                    class="text-gray-400 text-[14px] mt-1 duration-100 flex items-center"
+                    class="dark:text-gray-400 text-[14px] mt-1 hover:text-gray-600 flex items-center dark:hover:text-gray-200 duration-100"
                   >
-                    <span class="hover:text-gray-200">RoadsideCoder</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      class="w-[14px] h-[14px] ml-1"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
+                    RoadsideCoder
+                    <span class="text-gray-500"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-[14px] h-[14px] ml-1"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                          clip-rule="evenodd"
+                        /></svg
+                    ></span>
                   </h2>
-                  <p class="text-gray-400 text-[13px]">
+                  <p class="text-gray-600 dark:text-gray-400 text-[13px]">
                     <span>6.1k views</span> -- <span> 5 days ago </span>
                   </p>
                 </div>
@@ -1795,12 +1938,16 @@
 
             <div class="ml-3 w-[297px] h-[300px] cursor-pointer">
               <!-- ! thumbnile  -->
-              <div>
+              <div class="relative">
                 <img
                   class="w-[296px] object-cover rounded-[14px]"
                   src="./images/thumbnile/hq720 (12).webp"
                   alt=""
                 />
+                <span
+                  class="text-white bg-black -mt-[24px] right-0 mr-1 rounded-sm text-sm px-[3px] z-20 absolute"
+                  >25:27</span
+                >
               </div>
               <!-- ! content info  -->
               <div class="mt-2 flex">
@@ -1809,32 +1956,34 @@
                   src="./images/channel-logo/channels4_profile (12).jpg"
                   alt=""
                 />
+
                 <div class="px-2">
                   <h1
-                    class="text-slate-200 text-[15px] w-56 truncate ..."
+                    class="dark:text-slate-200 text-[15px] w-56 truncate ..."
                     title="সূরা আসরের সম্পূর্ণ তাফসির || সব পর্ব একসাথে || নোমান  আলী খান by NAKInBangla"
                   >
                     সূরা আসরের সম্পূর্ণ তাফসির || সব পর্ব একসাথে || নোমান আলী
                     খান by NAKInBangla
                   </h1>
                   <h2
-                    class="text-gray-400 text-[14px] mt-1 duration-100 flex items-center"
+                    class="dark:text-gray-400 text-[14px] mt-1 hover:text-gray-600 flex items-center dark:hover:text-gray-200 duration-100"
                   >
-                    <span class="hover:text-gray-200">NAKInBangla</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      class="w-[14px] h-[14px] ml-1"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
+                    NAKInBangla
+                    <span class="text-gray-500"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-[14px] h-[14px] ml-1"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                          clip-rule="evenodd"
+                        /></svg
+                    ></span>
                   </h2>
-                  <p class="text-gray-400 text-[13px]">
+                  <p class="text-gray-600 dark:text-gray-400 text-[13px]">
                     <span>569k views</span> -- <span> 11 months ago </span>
                   </p>
                 </div>
@@ -1844,12 +1993,16 @@
 
             <div class="ml-3 w-[297px] h-[300px] cursor-pointer">
               <!-- ! thumbnile  -->
-              <div>
+              <div class="relative">
                 <img
                   class="w-[296px] object-cover rounded-[14px]"
                   src="./images/thumbnile/hq720 (13).webp"
                   alt=""
                 />
+                <span
+                  class="text-white bg-black -mt-[24px] right-0 mr-1 rounded-sm text-sm px-[3px] z-20 absolute"
+                  >16:24</span
+                >
               </div>
               <!-- ! content info  -->
               <div class="mt-2 flex">
@@ -1860,29 +2013,30 @@
                 />
                 <div class="px-2">
                   <h1
-                    class="text-slate-200 text-[15px] w-56 truncate ..."
+                    class="dark:text-slate-200 text-[15px] w-56 truncate ..."
                     title="Are brain implants the future of computing? "
                   >
                     Are brain implants the future of computing?
                   </h1>
                   <h2
-                    class="text-gray-400 text-[14px] mt-1 duration-100 flex items-center"
+                    class="dark:text-gray-400 text-[14px] mt-1 hover:text-gray-600 flex items-center dark:hover:text-gray-200 duration-100"
                   >
-                    <span class="hover:text-gray-200">The Economist</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      class="w-[14px] h-[14px] ml-1"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
+                    The Economist
+                    <span class="text-gray-500"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-[14px] h-[14px] ml-1"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                          clip-rule="evenodd"
+                        /></svg
+                    ></span>
                   </h2>
-                  <p class="text-gray-400 text-[13px]">
+                  <p class="text-gray-600 dark:text-gray-400 text-[13px]">
                     <span>194k views</span> -- <span> 8 days ago </span>
                   </p>
                 </div>
@@ -1892,12 +2046,16 @@
 
             <div class="ml-3 w-[297px] h-[300px] cursor-pointer">
               <!-- ! thumbnile  -->
-              <div>
+              <div class="relative">
                 <img
                   class="w-[296px] object-cover rounded-[14px]"
                   src="./images/thumbnile/hq720 (14).webp"
                   alt=""
                 />
+                <span
+                  class="text-white bg-black -mt-[24px] right-0 mr-1 rounded-sm text-sm px-[3px] z-20 absolute"
+                  >1:24:17</span
+                >
               </div>
               <!-- ! content info  -->
               <div class="mt-2 flex">
@@ -1908,30 +2066,31 @@
                 />
                 <div class="px-2">
                   <h1
-                    class="text-slate-200 text-[15px] w-56 truncate ..."
+                    class="dark:text-slate-200 text-[15px] w-56 truncate ..."
                     title="7 Deadly sins of Money Management (Perspective Podcast:23) | M Mahmudul Kabir | @LifeSpringLimited"
                   >
                     7 Deadly sins of Money Management (Perspective Podcast:23) |
                     M Mahmudul Kabir | @LifeSpringLimited
                   </h1>
                   <h2
-                    class="text-gray-400 text-[14px] mt-1 duration-100 flex items-center"
+                    class="dark:text-gray-400 text-[14px] mt-1 hover:text-gray-600 flex items-center dark:hover:text-gray-200 duration-100"
                   >
-                    <span class="hover:text-gray-200">Yahia Amin</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      class="w-[14px] h-[14px] ml-1"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
+                    Yahia Amin
+                    <span class="text-gray-500"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-[14px] h-[14px] ml-1"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                          clip-rule="evenodd"
+                        /></svg
+                    ></span>
                   </h2>
-                  <p class="text-gray-400 text-[13px]">
+                  <p class="text-gray-600 dark:text-gray-400 text-[13px]">
                     <span>92k views</span> -- <span> 4 months ago </span>
                   </p>
                 </div>
@@ -1941,12 +2100,16 @@
 
             <div class="ml-3 w-[297px] h-[300px] cursor-pointer">
               <!-- ! thumbnile  -->
-              <div>
+              <div class="relative">
                 <img
                   class="w-[296px] object-cover rounded-[14px]"
                   src="./images/thumbnile/hq720 (15).webp"
                   alt=""
                 />
+                <span
+                  class="text-white bg-black -mt-[24px] right-0 mr-1 rounded-sm text-sm px-[3px] z-20 absolute"
+                  >2:46:16</span
+                >
               </div>
               <!-- ! content info  -->
               <div class="mt-2 flex">
@@ -1957,17 +2120,17 @@
                 />
                 <div class="px-2">
                   <h1
-                    class="text-slate-200 text-[15px] w-56 truncate ..."
+                    class="dark:text-slate-200 text-[15px] w-56 truncate ..."
                     title="আমাদের সৃষ্টির লক্ষ্য ও উদ্দেশ্য কি  । ডঃ জাকির নায়েক।"
                   >
                     আমাদের সৃষ্টির লক্ষ্য ও উদ্দেশ্য কি । ডঃ জাকির নায়েক।"
                   </h1>
                   <h2
-                    class="text-gray-400 text-[14px] mt-1 duration-100 flex items-center"
+                    class="dark:text-gray-400 text-[14px] mt-1 hover:text-gray-600 flex items-center dark:hover:text-gray-200 duration-100"
                   >
-                    <span class="hover:text-gray-200">Quraner Ahoban</span>
+                    Quraner Ahoban
                   </h2>
-                  <p class="text-gray-400 text-[13px]">
+                  <p class="text-gray-600 dark:text-gray-400 text-[13px]">
                     <span>2.2M views</span> -- <span> 6 years ago </span>
                   </p>
                 </div>
@@ -1977,12 +2140,16 @@
 
             <div class="ml-3 w-[297px] h-[300px] cursor-pointer">
               <!-- ! thumbnile  -->
-              <div>
+              <div class="relative">
                 <img
                   class="w-[296px] object-cover rounded-[14px]"
                   src="./images/thumbnile/hq720 (16).webp"
                   alt=""
                 />
+                <span
+                  class="text-white bg-black -mt-[24px] right-0 mr-1 rounded-sm text-sm px-[3px] z-20 absolute"
+                  >9:12</span
+                >
               </div>
               <!-- ! content info  -->
               <div class="mt-2 flex">
@@ -1993,29 +2160,30 @@
                 />
                 <div class="px-2">
                   <h1
-                    class="text-slate-200 text-[15px] w-56 truncate ..."
+                    class="dark:text-slate-200 text-[15px] w-56 truncate ..."
                     title="The Truth About AI Getting "
                   >
                     The Truth About AI Getting "Creative"
                   </h1>
                   <h2
-                    class="text-gray-400 text-[14px] mt-1 duration-100 flex items-center"
+                    class="dark:text-gray-400 text-[14px] mt-1 hover:text-gray-600 flex items-center dark:hover:text-gray-200 duration-100"
                   >
-                    <span class="hover:text-gray-200">Marques Brownlee</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      class="w-[14px] h-[14px] ml-1"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
+                    Marques Brownlee
+                    <span class="text-gray-500"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-[14px] h-[14px] ml-1"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                          clip-rule="evenodd"
+                        /></svg
+                    ></span>
                   </h2>
-                  <p class="text-gray-400 text-[13px]">
+                  <p class="text-gray-600 dark:text-gray-400 text-[13px]">
                     <span>2.4M views</span> -- <span> 2 weeks ago </span>
                   </p>
                 </div>
@@ -2025,12 +2193,16 @@
 
             <div class="ml-3 w-[297px] h-[300px] cursor-pointer">
               <!-- ! thumbnile  -->
-              <div>
+              <div class="relative">
                 <img
                   class="w-[296px] object-cover rounded-[14px]"
                   src="./images/thumbnile/hq720 (17).webp"
                   alt=""
                 />
+                <span
+                  class="text-white bg-black -mt-[24px] right-0 mr-1 rounded-sm text-sm px-[3px] z-20 absolute"
+                  >9:11</span
+                >
               </div>
               <!-- ! content info  -->
               <div class="mt-2 flex">
@@ -2041,31 +2213,31 @@
                 />
                 <div class="px-2">
                   <h1
-                    class="text-slate-200 text-[15px] w-56 truncate ..."
+                    class="dark:text-slate-200 text-[15px] w-56 truncate ..."
                     title="বাংলাদেশের এলপিজি ইন্ডাস্ট্রি | LPG Industry of Bangladesh"
                   >
                     বাংলাদেশের এলপিজি ইন্ডাস্ট্রি | LPG Industry of Bangladesh
                   </h1>
                   <h2
-                    class="text-gray-400 text-[14px] mt-1 duration-100 flex items-center"
+                    class="dark:text-gray-400 text-[14px] mt-1 hover:text-gray-600 flex items-center dark:hover:text-gray-200 duration-100"
                   >
-                    <span class="hover:text-gray-200"
-                      >Business Inspection BD</span
-                    >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      class="w-[14px] h-[14px] ml-1"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
+                    Business Inspection BD
+
+                    <span class="text-gray-500"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-[14px] h-[14px] ml-1"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                          clip-rule="evenodd"
+                        /></svg
+                    ></span>
                   </h2>
-                  <p class="text-gray-400 text-[13px]">
+                  <p class="text-gray-600 dark:text-gray-400 text-[13px]">
                     <span>21k views</span> -- <span> 3 days ago </span>
                   </p>
                 </div>
@@ -2075,12 +2247,16 @@
 
             <div class="ml-3 w-[297px] h-[300px] cursor-pointer">
               <!-- ! thumbnile  -->
-              <div>
+              <div class="relative">
                 <img
                   class="w-[296px] object-cover rounded-[14px]"
                   src="./images/thumbnile/hq720 (18).webp"
                   alt=""
                 />
+                <span
+                  class="text-white bg-black -mt-[24px] right-0 mr-1 rounded-sm text-sm px-[3px] z-20 absolute"
+                  >45:36</span
+                >
               </div>
               <!-- ! content info  -->
               <div class="mt-2 flex">
@@ -2091,29 +2267,31 @@
                 />
                 <div class="px-2">
                   <h1
-                    class="text-slate-200 text-[15px] w-56 truncate ..."
+                    class="dark:text-slate-200 text-[15px] w-56 truncate ..."
                     title="এদের কেউ কেউ মাসে  ৬ থেকে ৭ লক্ষ টাকা আয় করেন ! "
                   >
                     এদের কেউ কেউ মাসে ৬ থেকে ৭ লক্ষ টাকা আয় করেন !
                   </h1>
                   <h2
-                    class="text-gray-400 text-[14px] mt-1 duration-100 flex items-center"
+                    class="dark:text-gray-400 text-[14px] mt-1 hover:text-gray-600 flex items-center dark:hover:text-gray-200 duration-100"
                   >
-                    <span class="hover:text-gray-200">Kebria RJ</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      class="w-[14px] h-[14px] ml-1"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
+                    Kebria RJ
+
+                    <span class="text-gray-500"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-[14px] h-[14px] ml-1"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                          clip-rule="evenodd"
+                        /></svg
+                    ></span>
                   </h2>
-                  <p class="text-gray-400 text-[13px]">
+                  <p class="text-gray-600 dark:text-gray-400 text-[13px]">
                     <span>1.9M views</span> -- <span> 1 year ago </span>
                   </p>
                 </div>

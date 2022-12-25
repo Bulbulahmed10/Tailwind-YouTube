@@ -5,17 +5,17 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Roboto", "Arial", "sans-serif"],
+        sans: ["Roboto", "Arial", "sans-serif", "Oswald"],
+        oswald: ["Oswald", "Roboto"],
       },
     },
   },
   plugins: [require("tailwind-scrollbar")],
-  
-  variants: {
-    scrollbar: ['rounded']
-  }
-};
 
+  variants: {
+    scrollbar: ["rounded"],
+  },
+};
 
 
 
